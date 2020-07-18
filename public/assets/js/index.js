@@ -10,7 +10,7 @@ var activeNote = {};
 // A function for getting all notes from the db
 var getNotes = function() {
   return $.ajax({
-    url: "http://localhost:3000/api/notes",
+    url: "https://murmuring-refuge-33575.herokuapp.com/api/notes",
     method: "GET"
   });
 };
@@ -18,7 +18,7 @@ var getNotes = function() {
 // A function for saving a note to the db
 var saveNote = function(note) {
   return $.ajax({
-    url: "http://localhost:3000/api/notes",
+    url: "https://murmuring-refuge-33575.herokuapp.com/api/notes",
     data: note,
     method: "POST"
   });
@@ -28,7 +28,7 @@ var saveNote = function(note) {
 var deleteNote = function(id) {
   console.log(id)
   return $.ajax({
-    url: "http://localhost:3000/api/notes/" + id,
+    url: "https://murmuring-refuge-33575.herokuapp.com/api/notes/" + id,
     method: "DELETE"
   });
 };
