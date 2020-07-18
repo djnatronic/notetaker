@@ -1,6 +1,9 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.5"
+  },
   "description": "Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.",
   "main": "server.js",
   "scripts": {
